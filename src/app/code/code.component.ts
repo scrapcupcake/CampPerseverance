@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 console.log('`code` component loaded asynchronously');
 
 @Component({
-  selector: 'code',
+  selector: 'code-of-conduct',
   styles: [`
   `],
   templateUrl:'./code.template.html' 
