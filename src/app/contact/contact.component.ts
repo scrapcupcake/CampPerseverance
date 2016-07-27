@@ -12,20 +12,9 @@ console.log('`contact` component loaded asynchronously');
   selector: 'contact',
   styles: [`
   `],
-  template: `
-    <h1>Contact Us</h1>
-    <div>The best way to contact us is by phone, which we'll answer 24/7.  Our camp coordinator will answer emails within one day, and you can stop by to tour the camp, drop off donations, or come by and chat any day between 9am and 8pm.
-    </div>
-    <div class="TwoColumn">
-      <h2>Phone: (555)555-5555</h2>
-      <h2>Email: CampWackyPants@gmail.com</h2>
-    </div>
-    <div>
-      <h3>Current Location:</h3>
-      32 Wallaby Way, Seattle WA 98168
-    </div>
-  `
+  templateUrl: './contact.template.html' 
 })
+
 export class Contact {
   localState;
   constructor(public route: ActivatedRoute) {

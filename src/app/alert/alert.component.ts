@@ -12,12 +12,7 @@ console.log('`alert` component loaded asynchronously');
   selector: 'alert',
   styles: [`
   `],
-  template: `
-    <h1>Urgent Need: A New Location</h1>
-    <div>
-      Our move story, and details on what we need in a new site
-    </div>
-  `
+  templateUrl:'./alert.template.html' 
 })
 export class Alert {
   localState;

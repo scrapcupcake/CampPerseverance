@@ -12,12 +12,7 @@ console.log('`code` component loaded asynchronously');
   selector: 'code',
   styles: [`
   `],
-  template: `
-    <h1>Code of Conduct</h1>
-    <div>
-      Press-friendly version of our code of conduct
-    </div>
-  `
+  templateUrl:'./code.template.html' 
 })
 export class Code {
   localState;

@@ -12,12 +12,7 @@ console.log('`needs` component loaded asynchronously');
   selector: 'needs',
   styles: [`
   `],
-  template: `
-    <h1>Camp Needs</h1>
-    <div>
-      list of camp needs
-    </div>
-  `
+  templateUrl:'./needs.template.html' 
 })
 export class Needs {
   localState;

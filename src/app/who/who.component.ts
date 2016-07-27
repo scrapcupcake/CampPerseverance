@@ -12,12 +12,7 @@ console.log('`who` component loaded asynchronously');
   selector: 'who',
   styles: [`
   `],
-  template: `
-    <h1>Who we are</h1>
-    <div>
-      Content here
-    </div>
-  `
+  templateUrl:'./who.template.html' 
 })
 export class Who {
   localState;
