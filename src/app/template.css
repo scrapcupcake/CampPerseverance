@@ -1,11 +1,9 @@
-
 body{
     margin: 0px;
-    padding: 0px;
     font-family: "Cabin";
     background-color: #809361;
 }
-@media screen and (min-width:700px) {
+@media screen and (min-width:700px){
   body{
     background-image: url(../assets/images/BGSplash.jpg);
     background-repeat: no-repeat;
@@ -17,6 +15,7 @@ body{
     display: -webkit-flex;
     display: flex;
     height:26vh;
+
     margin: 0px;
     background-image: url(../assets/images/Logo.png);
     background-repeat: no-repeat;
@@ -36,13 +35,7 @@ h2{
 }
 h3{
   font-size: 3vh;
-  margin: 0px;
-  text-align: left;
-}
-h4{
-  font-size: 2.5vh;
-  margin: 0px;
-  padding-right: 20px;
+  margin: 5px;
   text-align: left;
 }
 
@@ -75,19 +68,41 @@ h4{
 .FBLink img{
   height: 5vh;
 }
-
-
-.Nav {
+.Nav{
   position: absolute;
-  top: 22vh;
-  right: 1.5vw;
-  height: 5vh;
-  width: 65vw;
-  box-sizing: border-box;
-  z-index: 1;
   display: flex;
   display: -webkit-flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  top: 22vh;
+  right: 1.5vw;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  z-index: 100;
+  align-items: baseline;
+}
+.Alert{
+  display: block;
+  background-color: #2a87ad;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #003333;
+  box-shadow: 0px 0px 7px rgba(51, 51, 51, 0.58),0px 3px 0px rgba(51, 51, 51, 0.51);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 3vh;
+  z-index: 200;
+  text-decoration: none;
+}
+.Alert:hover{
+  background-color: #6dcff6;
+  color: #003333;
+}
+
+.NavBar {
+  box-sizing: border-box;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-end;
   border-width: 1px;
   border-style: solid;
   border-color: rgb(51, 51, 51);
@@ -96,45 +111,25 @@ h4{
   color: rgb(255, 255, 255);
   font-size:2.5vh;
 }
-@media screen and (orientation : portrait){
-  .Nav{
-    font-size: 3vw;
-  }
-  h1{
-    font-size:4vw;
-  }
-  h2{
-    font-size: 3.5vw;
-  }
-  h3{
-    font-size: 3vw;
-  }
-  h4{
-    font-size: 2.5vw;
-  }
-  .Title h1{
-    font-size: 7vw;
-  }
-}
-.Nav a{
+.NavBar a{
   color: rgb(255, 255, 255);
   display: block;
   text-decoration: none;
   padding: 4px 10px;
 }
-.Nav a:hover {
-    background-color: #b6dc76;
+.NavBar a:hover {
+  color: #726e60;
+  background-color: #b6dc76;
 }
 
 .Main{
-  position: absolute;
   left: 0px;
   min-height: 74vh;
   width: 100%;
   z-index: 100;
   box-sizing: border-box;
   margin: 0px;
-  padding: 1vh 20vw;
+  padding: 5vh 20vw;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
@@ -143,14 +138,24 @@ h4{
   border-width: 1px;
   border-color: rgb(51, 51, 51);
   border-radius: 15vw 0px 0px 0px;
-  background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 7px rgba(51, 51, 51, 0.58),0px 3px 0px rgba(51, 51, 51, 0.51);
+  background-color: white;
   background-size: auto 70vh;
   background-image: url(../assets/images/LogoBig.png);
   background-repeat: no-repeat;
   background-position: 5vw 2.5vh;
   text-align: justify;
   color: black;
+}
+
+@media screen and (orientation : portrait) and (max-width : 700px){
+  .Header{ height: 31vh;}
+  .Nav{ font-size: 3vw; }
+  h1{ font-size:4vw; }
+  h2{ font-size: 3.5vw; }
+  h3{ font-size: 3vw; }
+  .Title h1{ font-size: 7vw; }
+  .Main{ padding: 5vh 10vw; }
 }
 
 .TwoColumn{
@@ -175,23 +180,8 @@ h4{
   margin: 0px;
 }
 
-.FlexRow{
-  display: flex;
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-}
-
 ul{
   margin: 0px;
-  padding: 0px;
-  list-style-position: inside;
-}
-
-li{
-  padding: 0px;
-  margin: 5px;
   text-align: left;
 }
 
@@ -206,8 +196,7 @@ li{
   padding: 5px;
   min-height: 35px;
 }
-
-input[type=submit] {
+input[type=submit]{
   min-width: 165px;
   margin:10px;
   padding: 5px;
@@ -220,3 +209,8 @@ input[type=submit] {
   color: rgb(255, 255, 255);
   font-size:2.5vh;
 }
+
+
+
+
+
