@@ -7,10 +7,14 @@ import { Component, Input } from '@angular/core';
     display: flex;
     display: webkit-flex;
     justify-content: space-between;
+    margin:0px;
   }
-
-  .description{
-      font-size: small;
+  p{
+    margin:0px;
+  }
+  h3{
+    margin:0px;
+    margin-top:5px;
   }
 
   .usage {
@@ -19,7 +23,7 @@ import { Component, Input } from '@angular/core';
   `],
   template:`
   <div>
-  <h1>{{title}}</h1>
+  <h3>{{title}}</h3>
   <div class="lower-box">
     <p class="description">{{desc}}</p>
     <p class="usage">{{usage}}</p>
