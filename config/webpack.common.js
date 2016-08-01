@@ -180,7 +180,7 @@ module.exports = {
       {
         test: /\.html$/,
         loader: 'raw-loader',
-        exclude: [helpers.root('src/index.html')]
+        exclude: ["*/index.html"]
       }
 
     ]
@@ -246,7 +246,7 @@ module.exports = {
      * See: https://github.com/ampedandwired/html-webpack-plugin
      */
     new HtmlWebpackPlugin({
-      template: 'src/index.html',
+      template: '!!ejs!src/index.html',
       chunksSortMode: 'dependency'
     }),
 

@@ -3,35 +3,78 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'needs-section',
   styles: [`
+  
+  .FlexItem{
+    flex: 1 0 50%;
+  }
   section {
       flex: 1 0 50%;
-      border-radius: 30px 30px 0px 0px;
-      border: 1px solid black;
-      box-shadow: 0px 0px 7px rgba(51, 51, 51, 0.58),0px 3px 0px rgba(51, 51, 51, 0.51);
       padding: 10px;
-      margin-bottom:10px;
+      padding-top: 0px;
+      margin:5px 0px;
+      }
+
+      section.Urgent {
+        border-style: solid;
+        border-width: 27px 27px 31px;
+        -webkit-border-image: url(../assets/images/Needs1.png) 27 27 31 repeat;
+           -moz-border-image: url(../assets/images/Needs1.png) 27 27 31 repeat;
+             -o-border-image: url(../assets/images/Needs1.png) 27 27 31 repeat;
+                border-image: url(../assets/images/Needs1.png) 27 27 31 fill repeat;
+      }
+      section.Moderate{
+        border-style: solid;
+        border-width: 27px 27px 31px;
+        -webkit-border-image: url(../assets/images/Needs2.png) 27 27 31 repeat;
+           -moz-border-image: url(../assets/images/Needs2.png) 27 27 31 repeat;
+             -o-border-image: url(../assets/images/Needs2.png) 27 27 31 repeat;
+                border-image: url(../assets/images/Needs2.png) 27 27 31 fill repeat;
+      }
+      section.Basic{
+        border-style: solid;
+        border-width: 27px 27px 31px;
+        -webkit-border-image: url(../assets/images/Needs3.png) 27 27 31 repeat;
+           -moz-border-image: url(../assets/images/Needs3.png) 27 27 31 repeat;
+             -o-border-image: url(../assets/images/Needs3.png) 27 27 31 repeat;
+                border-image: url(../assets/images/Needs3.png) 27 27 31 fill repeat;
+      }
+      section.Wishful{
+        border-style: solid;
+        border-width: 27px 27px 31px;
+        -webkit-border-image: url(../assets/images/Needs4.png) 27 27 31 repeat;
+           -moz-border-image: url(../assets/images/Needs4.png) 27 27 31 repeat;
+             -o-border-image: url(../assets/images/Needs4.png) 27 27 31 repeat;
+                border-image: url(../assets/images/Needs4.png) 27 27 31 fill repeat;
       }
     h1 { 
-        border-radius: 30px 30px 0px 0px;
-        padding: 10px 20px 10px 20px;
-        color: white;
-        height: 4vh;
-        margin: -10px;
-        margin-bottom: 10px;
-        font-size: 3.5vh;
+      position:relative;
+      left:-1vw;
+      -webkit-text-stroke: 1px black;
+      color: white;
+      text-shadow:
+         3px 3px 0 #000,
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000;
+      font-size: 3.5vh;
     }
-    h1.Urgent { background: #b50000; }
-    h1.Moderate{ background: #d17b00; }
-    h1.Basic { background: #809361; }
-    h1.Wishful { background: #2a87ad; }
+    h2{
+      color:white;
+      margin:0px;
+      font-size:2vh;
+      font-style: oblique;
+    }
   `],
   template:`
-  <section>
-  <h1 [class]="class">{{title}}</h1>
+  <section [class]="class">
+  <h1>{{title}}</h1>
+  <h2>{{desc}}</h2>
   <ng-content></ng-content>
   </section> ` 
 })
 export class NeedsSection {
   @Input() class: string;
   @Input() title : string;
+  @Input() desc : string;
 }
