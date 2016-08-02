@@ -4,11 +4,7 @@ import { Component, Input } from '@angular/core';
   selector: 'needs-section',
   styles: [`
   
-  .FlexItem{
-    flex: 1 0 50%;
-  }
   section {
-      flex: 1 0 50%;
       padding: 10px;
       padding-top: 0px;
       margin:5px 0px;

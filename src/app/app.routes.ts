@@ -4,7 +4,7 @@ import { Home } from './home';
 import { Alert } from './alert';
 import { Code } from './code';
 import { Contact } from './contact';
-import { Needs } from './needs';
+import { Needs, NeedsSurvey } from './needs';
 import { Who } from './who';
 import { NoContent } from './no-content';
 
@@ -17,6 +17,7 @@ export const routes: RouterConfig = [
   { path: 'code',  component: Code },
   { path: 'contact',  component: Contact },
   { path: 'needs',  component: Needs },
+  { path: 'needs/survey', component: NeedsSurvey },
   { path: 'who',  component: Who },
   // make sure you match the component type string to the require in asyncRoutes
   { path: 'about', component: 'About',

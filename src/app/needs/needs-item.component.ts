@@ -15,6 +15,15 @@ import { Component, Input } from '@angular/core';
   h3{
     margin:0px;
     margin-top:5px;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow:
+        3px 3px 0 #000,
+       -1px -1px 0 #000,  
+        1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+    font-size: 3.5vh;
   }
 
   .usage {

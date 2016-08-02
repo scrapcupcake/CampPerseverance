@@ -5,7 +5,19 @@ import {NeedsItem} from './needs-item.component';
 @Component({
   selector: 'needs',
   directives: [NeedsSection, NeedsItem],
-  styles: [`./needs.scss`],
+  styles: [`
+  .TwoFlex{
+    display: flex;
+    display: -webkit-flex;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+    }
+    needs-section{
+      flex: 1 0 400px;
+      
+    }
+  `],
   templateUrl:'./needs.template.html' 
 })
 export class Needs {
