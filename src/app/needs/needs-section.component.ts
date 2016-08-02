@@ -13,34 +13,34 @@ import { Component, Input } from '@angular/core';
       section.Urgent {
         border-style: solid;
         border-width: 27px 27px 31px;
-        -webkit-border-image: url(../assets/images/Needs1.png) 27 27 31 repeat;
-           -moz-border-image: url(../assets/images/Needs1.png) 27 27 31 repeat;
-             -o-border-image: url(../assets/images/Needs1.png) 27 27 31 repeat;
-                border-image: url(../assets/images/Needs1.png) 27 27 31 fill repeat;
+        -webkit-border-image: url(../../assets/images/Needs1.png) 27 27 31 repeat;
+           -moz-border-image: url(../../assets/images/Needs1.png) 27 27 31 repeat;
+             -o-border-image: url(../../assets/images/Needs1.png) 27 27 31 repeat;
+                border-image: url(../../assets/images/Needs1.png) 27 27 31 fill repeat;
       }
       section.Moderate{
         border-style: solid;
         border-width: 27px 27px 31px;
-        -webkit-border-image: url(../assets/images/Needs2.png) 27 27 31 repeat;
-           -moz-border-image: url(../assets/images/Needs2.png) 27 27 31 repeat;
-             -o-border-image: url(../assets/images/Needs2.png) 27 27 31 repeat;
-                border-image: url(../assets/images/Needs2.png) 27 27 31 fill repeat;
+        -webkit-border-image: url(../../assets/images/Needs2.png) 27 27 31 repeat;
+           -moz-border-image: url(../../assets/images/Needs2.png) 27 27 31 repeat;
+             -o-border-image: url(../../assets/images/Needs2.png) 27 27 31 repeat;
+                border-image: url(../../assets/images/Needs2.png) 27 27 31 fill repeat;
       }
       section.Basic{
         border-style: solid;
         border-width: 27px 27px 31px;
-        -webkit-border-image: url(../assets/images/Needs3.png) 27 27 31 repeat;
-           -moz-border-image: url(../assets/images/Needs3.png) 27 27 31 repeat;
-             -o-border-image: url(../assets/images/Needs3.png) 27 27 31 repeat;
-                border-image: url(../assets/images/Needs3.png) 27 27 31 fill repeat;
+        -webkit-border-image: url(../../assets/images/Needs3.png) 27 27 31 repeat;
+           -moz-border-image: url(../../assets/images/Needs3.png) 27 27 31 repeat;
+             -o-border-image: url(../../assets/images/Needs3.png) 27 27 31 repeat;
+                border-image: url(../../assets/images/Needs3.png) 27 27 31 fill repeat;
       }
       section.Wishful{
         border-style: solid;
         border-width: 27px 27px 31px;
-        -webkit-border-image: url(../assets/images/Needs4.png) 27 27 31 repeat;
-           -moz-border-image: url(../assets/images/Needs4.png) 27 27 31 repeat;
-             -o-border-image: url(../assets/images/Needs4.png) 27 27 31 repeat;
-                border-image: url(../assets/images/Needs4.png) 27 27 31 fill repeat;
+        -webkit-border-image: url(../../assets/images/Needs4.png) 27 27 31 repeat;
+           -moz-border-image: url(../../assets/images/Needs4.png) 27 27 31 repeat;
+             -o-border-image: url(../../assets/images/Needs4.png) 27 27 31 repeat;
+                border-image: url(../../assets/images/Needs4.png) 27 27 31 fill repeat;
       }
     h1 { 
       position:relative;
