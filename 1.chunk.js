@@ -1,29 +1,29 @@
 webpackJsonpac__name_([1],{
 
-/***/ 432:
+/***/ 434:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	var detail_component_1 = __webpack_require__(768);
+	var detail_component_1 = __webpack_require__(786);
 	exports.Detail = detail_component_1.Detail;
-	var index_component_1 = __webpack_require__(769);
+	var index_component_1 = __webpack_require__(787);
 	exports.Index = index_component_1.Index;
 	console.log('`Detail` bundle loaded asynchronously');
 	// Must be exported for WebpackAsyncRoute
-	__export(__webpack_require__(770));
+	__export(__webpack_require__(788));
 	
 
 /***/ },
 
-/***/ 768:
+/***/ 786:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var core_1 = __webpack_require__(1);
-	var router_1 = __webpack_require__(124);
+	var router_1 = __webpack_require__(58);
 	var Detail = (function () {
 	    function Detail() {
 	    }
@@ -45,7 +45,7 @@ webpackJsonpac__name_([1],{
 
 /***/ },
 
-/***/ 769:
+/***/ 787:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70,12 +70,12 @@ webpackJsonpac__name_([1],{
 
 /***/ },
 
-/***/ 770:
+/***/ 788:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var detail_component_1 = __webpack_require__(768);
-	var index_component_1 = __webpack_require__(769);
+	var detail_component_1 = __webpack_require__(786);
+	var index_component_1 = __webpack_require__(787);
 	// async components must be named routes for WebpackAsyncRoute
 	exports.routes = {
 	    path: 'detail', component: detail_component_1.Detail,

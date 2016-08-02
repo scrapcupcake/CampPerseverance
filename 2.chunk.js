@@ -1,23 +1,23 @@
 webpackJsonpac__name_([2],{
 
-/***/ 433:
+/***/ 435:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	__export(__webpack_require__(771));
+	__export(__webpack_require__(789));
 	
 
 /***/ },
 
-/***/ 771:
+/***/ 789:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var core_1 = __webpack_require__(1);
-	var router_1 = __webpack_require__(124);
+	var router_1 = __webpack_require__(58);
 	/*
 	 * We're loading this component asynchronously
 	 * We are using some magic with es6-promise-loader that will wrap the module with a Promise
