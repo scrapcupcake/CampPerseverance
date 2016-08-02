@@ -7,11 +7,14 @@ import { ActivatedRoute } from '@angular/router';
  */
 
 @Component({
-  selector: 'who',
+  selector: 'site-search',
   styles: [`
   `],
-  templateUrl:'./who.template.html' 
+  template:`
+<h1>The search for a new home...</h1>
+Stuff about our move story, and what we're looking for in a host site.
+` 
 })
-export class Who {
+export class SiteSearch {
 
 }

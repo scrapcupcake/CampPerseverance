@@ -6,12 +6,17 @@ import { ActivatedRoute } from '@angular/router';
  * see https://github.com/gdi2290/es6-promise-loader for more info
  */
 
+console.log('`code` component loaded asynchronously');
+
 @Component({
-  selector: 'who',
+  selector: 'code-of-conduct',
   styles: [`
   `],
-  templateUrl:'./who.template.html' 
+  template:`
+<h1>Code of Conduct</h1>
+Press-friendly version of our code of conduct, calling out being a "dry camp"
+  ` 
 })
-export class Who {
+export class CodeOfConduct {
 
 }
