@@ -1,12 +1,8 @@
 import { Component } from "@angular/core";
 
 @Component({
-template: `
-<div id='indexContent'>
-    <div class="Content">
-    
-    </div>            
-</div>`
+templateUrl: './mission-statement.html',
+styles: [`.Content p{ font-size: 140%; }`]
 })
 export class MissionStatement
 {

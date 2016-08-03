@@ -1,0 +1,40 @@
+
+  div.lower-box{
+    display: flex;
+    display: webkit-flex;
+    justify-content: space-between;
+    margin:0px;
+  }
+  p{
+    margin:0px;
+  }
+  h3{
+    border-top:groove;
+    margin:0px;
+    margin-top:5px;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow:
+        3px 3px 0 #000,
+       -1px -1px 0 #000,  
+        1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+    font-size: 3vh;
+  }
+  .Urgent h3{
+    border-color:red;
+  }
+  .Moderate h3{
+    border-color:orange;
+  }
+  .Basic h3{
+    border-color:green;
+  }
+  .Wishful h3{
+    border-color:blue;
+  }
+
+  .usage {
+      font-weight: bold;
+  }

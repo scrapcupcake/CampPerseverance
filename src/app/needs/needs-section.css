@@ -4,6 +4,8 @@
       padding: 10px;
       padding-top: 0px;
       margin:5px 0px;
+      color: white;
+      flex: 1 550px;
       }
 
       section.Urgent {
@@ -57,3 +59,15 @@
       font-size:2vh;
       font-style: oblique;
     }
+    .Urgent h3{
+    border-color:red;
+  }
+  .Moderate h3{
+    border-color:orange;
+  }
+  .Basic h3{
+    border-color:green;
+  }
+  .Wishful h3{
+    border-color:blue;
+  }

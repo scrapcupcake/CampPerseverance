@@ -1,0 +1,13 @@
+.Left {
+    flex: 1 550px;
+    padding-right:15px;
+}
+
+.Right {
+    flex: 1 550px;
+    padding-left:15px;
+}
+img{
+    width:100%;
+    height: auto;
+}

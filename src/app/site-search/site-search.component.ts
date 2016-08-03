@@ -8,12 +8,8 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'site-search',
-  styles: [`
-  `],
-  template:`
-<h1>The search for a new home...</h1>
-Stuff about our move story, and what we're looking for in a host site.
-` 
+  styleUrls: ['./site-search.css'],
+  templateUrl:'./site-search.template.html' 
 })
 export class SiteSearch {
 
